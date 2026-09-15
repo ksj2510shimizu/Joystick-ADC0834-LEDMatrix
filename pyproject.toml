@@ -3,5 +3,9 @@ name = "joystic-adc0834-ledmatrix"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "gpiozero>=2.0.1.post3",
+    "lgpio>=0.2.2.0",
+    "luma-led-matrix>=1.9.0",
+]
