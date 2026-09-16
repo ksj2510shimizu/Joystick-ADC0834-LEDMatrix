@@ -19,7 +19,7 @@ class Joystick:
         return self._sw.is_pressed
     
     def get_x_ratio(self) -> float:
-        return self.get_x_raw_val / 255
+        return self.get_x_raw_val() / 255
     
     def get_y_ratio(self) -> float:
-        return self.get_y_raw_val / 255
+        return self.get_y_raw_val() / 255
