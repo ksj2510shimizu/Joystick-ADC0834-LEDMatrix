@@ -9,11 +9,17 @@ class Joystick:
         self._sw = Button(sw_pin)
         ADC0834.setup()
     
-    def get_x_val(self) -> int:
+    def get_x_raw_val(self) -> int:
         return ADC0834.getResult(0)
 
-    def get_y_val(self) -> int | None:
+    def get_y_raw_val(self) -> int:
         return ADC0834.getResult(1)
 
     def is_sw_pressed(self) -> bool:
         return self._sw.is_pressed
+    
+    def get_x_ratio(self) -> float:
+        return self.get_x_raw_val / 255
+    
+    def get_y_ratio(self) -> float:
+        return self.get_y_raw_val / 255
