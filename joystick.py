@@ -1,5 +1,6 @@
 from gpiozero import Button
 import ADC0834
+from collections import deque
 
 # SWの接続先
 sw_pin = 22
@@ -23,3 +24,12 @@ class Joystick:
     
     def get_y_ratio(self) -> float:
         return self.get_y_raw_val() / 255
+
+class MovingAvg:
+    def __init__(self, size: int):
+        self._size = size
+        self._values = deque(maxlen=size)
+    
+    def add_val(self, val: float) -> float:
+        self._values.append(val)
+        return sum(self._values) / len(self._values)

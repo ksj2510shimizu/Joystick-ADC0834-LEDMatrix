@@ -2,10 +2,10 @@ from luma.core.interface.serial import spi, noop
 from luma.core.render import canvas
 from luma.led_matrix.device import max7219
 
-class LED_Matrix:
+class LEDMatrix:
     def __init__(self):
         self._serial = spi(port=0, device=0, gpio=noop())
-        self._device = max7219(self._serial, rotate=3)
+        self._device = max7219(self._serial, rotate=3) # 環境によってrotateの値を変更する必要がある
 
     def draw(self, x_position: float, y_position: float):
         with canvas(self._device) as draw:
