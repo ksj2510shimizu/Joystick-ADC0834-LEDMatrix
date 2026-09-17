@@ -57,8 +57,9 @@ Joystick → ADC0834 / Raspberry Pi
 | +5V | - | 5v0 |
 | VRx | CH0 | - |
 | VRy | CH1 | - |
-| SW | - | 10kΩ → GPIO22 |
+| SW | - | GPIO22 |
+| - | - | 5v0 → 10kΩ → GPIO22 |
 
-**必ずSWから10kΩ抵抗を経由してGPIO22に接続するようにしてください**
+プルアップ抵抗として10kΩを使用します
 
 参考: [2.1.9 ジョイスティック](https://docs.sunfounder.com/projects/raphael-kit/ja/latest/python_pi5/pi5_2.1.9_joystick_python.html)
