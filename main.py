@@ -20,4 +20,4 @@ while (True):
         led_matrix.draw(x_position, y_position)
         sleep(0.01)
     except KeyboardInterrupt:
-        pass
+        break
