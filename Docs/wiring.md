@@ -12,7 +12,7 @@ Raspberry Pi と Raphael Kit の GPIO Extension Board と Breadboard が接続�
 
 ## 配線先
 
-[1.1.6 LEDドットマトリックス](https://docs.sunfounder.com/projects/raphael-kit/ja/latest/python_pi5/pi5_1.1.6_led_dot_matrix_python.html) と [2.1.9 ジョイスティック](https://docs.sunfounder.com/projects/raphael-kit/ja/latest/python_pi5/pi5_2.1.9_joystick_python.html) の配線と同じです
+[1.1.6 LEDドットマトリックス](https://docs.sunfounder.com/projects/raphael-kit/ja/latest/python_pi5/pi5_1.1.6_led_dot_matrix_python.html) と [2.1.9 ジョイスティック](https://docs.sunfounder.com/projects/raphael-kit/ja/latest/python_pi5/pi5_2.1.9_joystick_python.html) と同じ配線です
 
 ### MAX7219 LED Matrix
 
