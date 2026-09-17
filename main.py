@@ -9,8 +9,11 @@ x_avg = MovingAvg(10)
 y_avg = MovingAvg(10)
 
 while (True):
-    x_position = x_avg.add_val(joystick.get_x_ratio()) * 7
-    y_position = y_avg.add_val(joystick.get_y_ratio()) * 7
+    try:
+        x_position = x_avg.add_val(joystick.get_x_ratio()) * 7
+        y_position = y_avg.add_val(joystick.get_y_ratio()) * 7
 
-    led_matrix.draw(x_position, y_position)
-    sleep(0.01)
+        led_matrix.draw(x_position, y_position)
+        sleep(0.01)
+    except KeyboardInterrupt:
+        pass
