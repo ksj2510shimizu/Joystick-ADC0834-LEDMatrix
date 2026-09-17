@@ -1,4 +1,4 @@
-# joystick-ADC-LEDMatrix
+# Joystick-ADC0834-LEDMatrix
 
 Raspberry Piで動作する、ジョイスティックの入力をMAX7219 LEDマトリクスに表示するプログラム
 
